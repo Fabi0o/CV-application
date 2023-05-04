@@ -4,7 +4,7 @@ type Props = {
   email: string;
 };
 
-const CV: React.FC<Props> = ({ firstName, lastName, email }) => {
+const Cv: React.FC<Props> = ({ firstName, lastName, email }) => {
   return (
     <div>
       <h1>CV</h1>
@@ -14,4 +14,4 @@ const CV: React.FC<Props> = ({ firstName, lastName, email }) => {
   );
 };
 
-export default CV;
+export default Cv;

@@ -1,5 +1,5 @@
 import style from "./style/App.module.scss";
-import CV from "./components/CV";
+import Cv from "./components/CV";
 import Form from "./components/Form";
 import { useState } from "react";
 
@@ -18,7 +18,7 @@ function App() {
         email={email}
         setEmail={setEmail}
       />
-      <CV firstName={firstName} lastName={lastName} email={email} />
+      <Cv firstName={firstName} lastName={lastName} email={email} />
     </div>
   );
 }
