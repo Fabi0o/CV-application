@@ -6,6 +6,7 @@ type Props = {
   email: string;
   setEmail: React.Dispatch<React.SetStateAction<string>>;
 };
+
 const Form: React.FC<Props> = ({
   firstName,
   setFirstName,
