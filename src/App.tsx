@@ -6,6 +6,7 @@ import { useState } from "react";
 function App() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
 
   return (
     <div className={style.container}>
@@ -14,8 +15,10 @@ function App() {
         setFirstName={setFirstName}
         lastName={lastName}
         setLastName={setLastName}
+        email={email}
+        setEmail={setEmail}
       />
-      <CV firstName={firstName} lastName={lastName} />
+      <CV firstName={firstName} lastName={lastName} email={email} />
     </div>
   );
 }
