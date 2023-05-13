@@ -12,11 +12,8 @@ function App() {
   return (
     <div className={style.container}>
       <Form
-        firstName={firstName}
         setFirstName={setFirstName}
-        lastName={lastName}
         setLastName={setLastName}
-        email={email}
         setEmail={setEmail}
         setBio={setBio}
       />
