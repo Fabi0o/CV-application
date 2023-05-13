@@ -5,6 +5,7 @@ type Props = {
   setLastName: React.Dispatch<React.SetStateAction<string>>;
   email: string;
   setEmail: React.Dispatch<React.SetStateAction<string>>;
+  setBio: React.Dispatch<React.SetStateAction<string>>;
 };
 
 const Form: React.FC<Props> = ({
@@ -14,6 +15,7 @@ const Form: React.FC<Props> = ({
   setLastName,
   email,
   setEmail,
+  setBio,
 }) => {
   return (
     <form>
@@ -38,6 +40,14 @@ const Form: React.FC<Props> = ({
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
+      <label htmlFor="bio">Bio</label>
+      <textarea
+        name="bio"
+        id=""
+        cols={30}
+        rows={10}
+        onChange={(e) => setBio(e.target.value)}
+      ></textarea>
     </form>
   );
 };

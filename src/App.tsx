@@ -7,6 +7,7 @@ function App() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
+  const [bio, setBio] = useState("");
 
   return (
     <div className={style.container}>
@@ -17,8 +18,9 @@ function App() {
         setLastName={setLastName}
         email={email}
         setEmail={setEmail}
+        setBio={setBio}
       />
-      <Cv firstName={firstName} lastName={lastName} email={email} />
+      <Cv firstName={firstName} lastName={lastName} email={email} bio={bio} />
     </div>
   );
 }
